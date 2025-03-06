@@ -1,5 +1,7 @@
-@use "./_settings" as *;
-@use "./components/_navigation";
-@use "./components/_logo";
-@use "./components/_countries";
-@use "./components/_card";
+@use "./settings" as *;
+@use "./components/navigation";
+@use "./components/logo";
+@use "./components/countries";
+@use "./components/card";
+@use "./components/article";
+@use "./pages/blog";

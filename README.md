@@ -1,12 +1,33 @@
-# React + Vite
+# Flag Application avec React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Auteur** :
 
-Currently, two official plugins are available:
+- Tuilier Thomas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description du site
 
-## Expanding the ESLint configuration
+Ce site est un projet d'entraînement sur React. C'est une application vitrine issue du cours de _From Scratch_ qui fonctionne en NoSQL (ie : sans une base de données), créé avec `json-server` et qui tourne avec la commande :
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+json-server --w src/assets/db.json --port 3004
+```
+
+Par rapport au cours original, certaines modifications ont été effectuées. On peut citer :
+
+- Ce projet a une structure React créée via Vite et non par `react-router-dom`.
+- TODO : La page d'accueil du cours a été mise dans la page `Liste des drapeaux`.
+- TODO : La page d'accueil présentée ici n'existe normalement pas dans le cours.
+
+## Lancer l'application
+
+Pour lancer l'application il faut lancer le script du back-end dans un premier terminal avec :
+
+```
+npm run server
+```
+
+Et lancer dans un deuxième terminal :
+
+```
+npm run dev
+```
